@@ -15,11 +15,7 @@ const nextConfig: NextConfig = {
       },
         {
         protocol: "https",
-        hostname: "lisafolawiyo.com",
-      },
-        {
-        protocol: "https",
-        hostname: "tan-lyrebird-945101.hostingersite.com",
+        hostname: "twopointsstudio.com",
       },
     ],
   },
