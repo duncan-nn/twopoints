@@ -96,7 +96,7 @@ function Footer() {
                         <FontAwesomeIcon icon={faEnvelope} className="f-nav-itemB-left-icon" />
                       </div>
                       <div className='f-nav-itemB-right'>
-                        <span className='d-navitem-text'>hello@elevateretailagency.com</span>
+                        <span className='d-navitem-text'>hello@twopointsstudio.com</span>
                         <div className='item-bottom-bar'/>
                       </div>
                     </div>
@@ -141,7 +141,7 @@ function Footer() {
             />
           </div>
           <div className='right'>
-            <span className='footer-bottom-item'>Elevate Retail 2025</span>
+            <span className='footer-bottom-item'>TwoPoints Studio 2025</span>
             <span className='divider'></span>
             <span className='footer-bottom-item'>All rights reserved</span>
           </div>

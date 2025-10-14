@@ -13,8 +13,8 @@ export async function POST(req: Request) {
     // const emailHtml = render(<ContactEmail name={name} email={email} message={message} />);
 
     await resend.emails.send({
-        from: 'hello@elevateretailagency.com',
-        to: 'chibuzor@elevateretailagency.com',
+        from: 'noreply@app.twopointsstudio.com',
+        to: 'app@twopointsstudio.com',
         subject: 'New Contact Form Message',
         react: ContactEmail({ name: name, email: email, phone: phone, referer: referer, message: message}),
     });

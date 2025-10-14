@@ -7,8 +7,8 @@ import { NoteCategory } from '@/lib/types';
 import Skeleton from '@/components/Skeleton';
 
 export const metadata: Metadata = {
-  title: "TwoPoints Studio",
-  description: "Design",
+  title: "Notes | Insights & Ideas from TwoPoints Studio",
+  description: "Read creative insights, brand strategy tips, and digital design trends from the minds behind TwoPoints Studio.",
 };
 
 export default async function Notes({ searchParams }: {searchParams: Promise<{
@@ -25,7 +25,6 @@ export default async function Notes({ searchParams }: {searchParams: Promise<{
     const { tag = "" } = await searchParams;
 
     const categories: NoteCategory[] = await getPostCategories();
-    console.log("Categories:", categories);
 
     // Find the category whose slug matches the search param
     const matchedCategory = categories.find((cat: NoteCategory) => cat.slug === category);
@@ -35,7 +34,6 @@ export default async function Notes({ searchParams }: {searchParams: Promise<{
 
     const post_data = await getPosts(search, categoryId, tag, parseInt(page,10), per_page,);
     const posts = post_data.posts;
-    console.log("Posts:", posts);
     //const totalPages = post_data.total_pages;
 
 

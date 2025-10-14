@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export const metadata: Metadata = {
-  title: "Elevate Retail | Elevate Your Brand with High-Performance Web & E-commerce Solutions",
-  description: "We design and develop custom websites and e-commerce platforms that help retail and service businesses in Lagos and beyond stand out, sell more, and scale fast.",
+  title: "Contact TwoPoints Studio | Let’s Create Something Bold",
+  description: "Get in touch with TwoPoints Studio for creative strategy, virtual photography, 3D animations, or web development services.",
 };
 
 export default function ContactPage() {
@@ -29,7 +29,7 @@ export default function ContactPage() {
               <div className="social-icons">
                 <a
                 className="icon-link-wrap"
-                href="https://www.instagram.com/elevate_retail/"
+                href="https://www.instagram.com/twopoints.studio/"
                 target="_blank"
                 rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faInstagram} className="social-icon" />
@@ -52,8 +52,8 @@ export default function ContactPage() {
             </div>
             <div className='hate-forms'>
               <span className="text-left">Hate contact forms?</span>
-              <a href="mailto:hello@elevateretailagency.com" className='f-nav-itemB-right'>
-                <span className='d-navitem-text'>hello@elevateretailagency.com</span>
+              <a href="mailto:hello@twopointsstudio.com" className='f-nav-itemB-right'>
+                <span className='d-navitem-text'>hello@twopointsstudio.com</span>
                 <div className='item-bottom-bar'/>
               </a>
             </div>

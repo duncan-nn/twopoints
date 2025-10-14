@@ -185,7 +185,7 @@
             align-items: flex-start;
             margin-bottom: 50px;
             @include u.breakpoint(md) {
-                align-items: flex-end;
+                // align-items: flex-end;
             }
             .head-wrap {
                 width: 100%;
@@ -256,7 +256,7 @@
             overflow: hidden;
             position: relative;
             margin-bottom: 30px;
-            .product-image {
+            .product-images {
                 position: relative;
                 width: 100%;
                 // aspect-ratio: 4 / 3;
@@ -270,6 +270,108 @@
                     display: block;
                     content: '';
                     clear: both;
+                }
+                .product-image-top {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                    transition: opacity 0.5s ease;
+                    &:hover {
+                        opacity: 0;
+                    }
+                }
+                .product-image-bottom {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .product-details {
+                width: 100%;
+                margin-top: 20px;
+                .subject-tag {
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    width: max-content;
+                    margin-bottom: 10px;
+                    @include u.breakpoint(md) {
+                        width: max-content;
+                    }
+                    span {
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: $white;
+                        margin-right: 10px;
+                        margin-bottom: 3px;
+                    }
+                    .tag-text {
+                        font-family: var(--font-Poppins), sans-serif;
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: $white;
+                        margin: 0;
+                        padding: 0;
+                        line-height: 1;
+                    }
+                }
+                .text {
+                    font-family: var(--font-Poppins), sans-serif;
+                    font-weight: 200;
+                    font-size: 25px;
+                    color: #929292;
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.2;
+                    @include u.breakpoint(md) {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .full-width-project {
+        width: 100%;
+        margin-top: 30px;
+        .full-width-product-card {
+            display: block;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 30px;
+            .product-images {
+                position: relative;
+                width: 100%;
+                // aspect-ratio: 4 / 3;
+                overflow: hidden;
+                &:before {
+                    float: left;
+                    padding-top: 70%;
+                    content: '';
+                    @include u.breakpoint(md) {
+                        padding-top: 60%;
+                    }
+                }
+                &:after {
+                    display: block;
+                    content: '';
+                    clear: both;
+                }
+                .product-image-top {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                    transition: opacity 0.5s ease;
+                    &:hover {
+                        opacity: 0;
+                    }
+                }
+                .product-image-bottom {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
                 }
             }
             .product-details {

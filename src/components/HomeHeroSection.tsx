@@ -27,9 +27,9 @@ function HomeHeroSection() {
 
             <div className="content">
                 <div className='subject-tag'>
-                    <span></span><h3 className='tag-text'>Hiya, we&apos;re Elevate Retail</h3>
+                    <span></span><h3 className='tag-text'>Hiya, we&apos;re TwoPoints Studio</h3>
                 </div>
-                <h1 className='text'>A web design, branding and eMarketing agency</h1>
+                <h1 className='text'>A visual design, web and eMarketing agency</h1>
             </div>
         </div>
     </div>

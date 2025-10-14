@@ -172,22 +172,22 @@ body {
   &:hover {
       .btn-wrap {
           .btn-left {
-              background-color: $yellow;
+              // background-color: $yellow;
               span {
-                color: $black;
+                // color: $black;
               }
           }
           .btn-right {
-              background-color: $yellow;
+              // background-color: $yellow;
               .btn-right-inner {
-                  background-color: $yellow;
+                  // background-color: $yellow;
                   .btn-icon1 {
                       transform: translateX(27px);
-                      color: $black;
+                      // color: $black;
                   }
                   .btn-icon2 {
                       transform: translateX(27px);
-                      color: $black;
+                      // color: $black;
                   }
               }
           }
@@ -202,11 +202,11 @@ body {
           width: max-content;
           height: 40px;
           padding: 0px 15px;
-          background-color: $sapphire;
+          background-color: $white;
           border-radius: 20px;
           transition: all 0.2s ease-in-out;
           span {
-            color: $yellow;
+            color: $black;
             font-family: var(--font-century-gothic), sans-serif;
             font-size: 16px;
             font-weight: 600;
@@ -221,7 +221,7 @@ body {
           width: 40px;
           height: 40px;
           border-radius: 50%;
-          background-color: $sapphire;
+          background-color: $white;
           transition: all 0.2s ease-in-out;
           // border: 1px solid #fff;
           .btn-right-inner {
@@ -233,13 +233,13 @@ body {
               height: 30px;
               border-radius: 50%;
               overflow: hidden;
-              background-color: $sapphire;
+              background-color: $white;
               transition: all 0.2s ease-in-out;
               .btn-icon {
                   font-size: 15px;
                   position: relative;
                   transition: all 0.2s ease-in-out;
-                  color: $yellow;
+                  color: $black;
               }
               .btn-icon1 {
                   left: -20px;

@@ -9,8 +9,8 @@ import RelatedNotes from '@/components/RelatedNotes';
 
 
 export const metadata: Metadata = {
-  title: "TwoPoints Studio",
-  description: "Design",
+  title: "Notes | Insights & Ideas from TwoPoints Studio",
+  description: "Read creative insights, brand strategy tips, and digital design trends from the minds behind TwoPoints Studio.",
 };
 
 const SingleNote = async ({ params, }: {params: Promise<{slug: string}>;}) => {

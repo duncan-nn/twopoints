@@ -11,8 +11,8 @@ import { NoteCategory } from "@/lib/types";
 import Skeleton from "@/components/Skeleton";
 
 export const metadata: Metadata = {
-  title: "Web design, branding, and digital marketing agency in Lagos | TwoPoints Studio",
-  description: "We help businesses stand out, connect, and grow through creative design, strategic marketing, and powerful digital solutions",
+  title: "TwoPoints Studio | Creative & Marketing Agency",
+  description: "We help brands grow through strategy, design, virtual product photography, 3D visuals, and powerful digital marketing solutions.",
 };
 
 export default async function Home() {

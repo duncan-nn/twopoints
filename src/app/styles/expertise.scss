@@ -23,7 +23,7 @@
             @include u.breakpoint(md) {
                 display: flex;
                 justify-content: space-between;
-                align-items: flex-end;
+                // align-items: flex-end;
             }
             .left {
                 width: 100%;
@@ -78,6 +78,7 @@
                 @include u.breakpoint(md) {
                     justify-content: flex-end;
                     width: 50%;
+                    padding-top: 30px;
                 }
                 .right-text {
                     font-family: var(--font-Poppins), sans-serif;
@@ -87,8 +88,12 @@
                     margin: 0;
                     padding: 0;
                     line-height: 1.4;
+                    letter-spacing: 2px;
                     @include u.breakpoint(md) {
                         max-width: 350px;
+                        font-size: 20px;
+                        font-weight: 200;
+                        letter-spacing: 2px;
                     }
                 }
             }
@@ -103,10 +108,10 @@
             .bottom-wrap {
                 width: 100%;
                 @include u.breakpoint(md) {
-                    width: 70%;
+                    // width: 70%;
                 }
                 @include u.breakpoint(lg) {
-                    width: 65%;
+                    // width: 65%;
                 }
                 .link-item {
                     width: 100%;
@@ -116,15 +121,23 @@
                         align-items: center;
                         border-bottom: 1px solid rgb(73, 73, 73);
                         padding: 20px 0px;
+                        @include u.breakpoint(md) {
+                            padding: 50px 0px;
+                        }
                         &:hover {
                             @include u.breakpoint(md) {
                                 .image-div {
                                     margin-right: 20px;
                                     width: 200px;
                                 }
+                                .service-name {
+                                    color: transparent;
+                                    -webkit-text-stroke: 2px white;
+                                }
                             }
                         }
                         .image-div {
+                            display: none;
                             width: 80px;
                             height: 50px;
                             margin-right: 20px;
@@ -145,11 +158,13 @@
                             font-weight: 400;
                             font-size: 28px;
                             color: $white;
+                            -webkit-text-stroke: 1px transparent; /* Width and color of the stroke */
                             margin: 0;
                             padding: 0;
                             line-height: 1.2;
+                            transition: color 0.4s ease, -webkit-text-stroke-color 0.4s ease;
                             @include u.breakpoint(md) {
-                               font-size: 5vw;
+                               font-size: 10vw;
                             }  
                         }
                     }

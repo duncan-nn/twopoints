@@ -21,44 +21,44 @@ function OurExpertise() {
              </div>
               <div className='bottom'>
                 <div className='bottom-wrap'>
-                     <Link href={'/'} className="link-item">
+                     <Link href={'/services'} className="link-item">
                         <div className='item'>
                             <div 
                             className='image-div'
                             style={{
                                 backgroundImage: `url('/images/projects/identity.jpg')`
                             }}></div>
-                            <span className='service-name'>Brand Identity</span>
+                            <span className='service-name'>Virtual Product Photography</span>
                         </div>
                      </Link>
-                     <Link href={'/'} className="link-item">
+                     <Link href={'/services'} className="link-item">
                         <div className='item'>
                             <div 
                             className='image-div'
                             style={{
                                 backgroundImage: `url('/images/projects/website.jpg')`
                             }}></div>
-                            <span className='service-name'>Websites</span>
+                            <span className='service-name'>3D Product Animation</span>
                         </div>
                      </Link>
-                     <Link href={'/'} className="link-item">
+                     <Link href={'/services'} className="link-item">
                         <div className='item'>
                             <div 
                             className='image-div'
                             style={{
                                 backgroundImage: `url('/images/projects/campaign.jpg')`
                             }}></div>
-                            <span className='service-name'>Campaigns</span>
+                            <span className='service-name'>Web Design & Maintenance</span>
                         </div>
                      </Link>
-                     <Link href={'/'} className="link-item">
+                     <Link href={'/services'} className="link-item">
                         <div className='item'>
                             <div 
                             className='image-div'
                             style={{
                                 backgroundImage: `url('/images/projects/ecomm.jpg')`
                             }}></div>
-                            <span className='service-name'>eSolutions</span>
+                            <span className='service-name'>eCommerce Solutions</span>
                         </div>
                      </Link>
                 </div>
@@ -70,7 +70,7 @@ function OurExpertise() {
             <div className='inner'>
                 <div className='top'>
                     <h1>
-                        Elevate retail created something better than I ever
+                        TwoPoints Studio created something better than I ever
                         could have imagined
                     </h1>
                 </div>

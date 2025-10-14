@@ -93,17 +93,17 @@
                         .icon-link-wrap {
                             width: 35px;
                             height: 35px;
-                            background-color: $yellow;
+                            background-color: $white;
                             border-radius: 50%;
                             margin-right: 7px;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            transition: all 0.2s ease-in-out;
+                            transition: background-color 0.4s ease;
                             &:hover {
-                                background-color: $sapphire;
+                                background-color: #e1e1e1;
                                 .social-icon {
-                                    color: $yellow;
+                                    // color: $yellow;
                                 }
                             }
                             .social-icon {
@@ -299,20 +299,20 @@
     &:hover {
         .btn-wrap {
             .btn-left {
-                background-color: $yellow;
-                color: $black;
+                // background-color: $white;
+                // color: $black;
             }
             .btn-right {
-                background-color: $yellow;
+                // background-color: $white;
                 .btn-right-inner {
-                    background-color: $yellow;
+                    // background-color: $white;
                     .btn-icon1 {
                         transform: translateX(27px);
-                        color: $black;
+                        // color: $black;
                     }
                     .btn-icon2 {
                         transform: translateX(27px);
-                        color: $black;
+                        // color: $black;
                     }
                 }
             }
@@ -326,9 +326,9 @@
             align-items: center;
             width: 200px;
             height: 40px;
-            background-color: $sapphire;
+            background-color: $white;
             border-radius: 20px;
-            color: $yellow;
+            color: $black;
             font-family: var(--font-century-gothic), sans-serif;
             font-size: 16px;
             font-weight: 600;
@@ -341,7 +341,7 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background-color: $sapphire;
+            background-color: $white;
             transition: all 0.2s ease-in-out;
             // border: 1px solid #fff;
             .btn-right-inner {
@@ -353,13 +353,13 @@
                 height: 30px;
                 border-radius: 50%;
                 overflow: hidden;
-                background-color: $sapphire;
+                background-color: $white;
                 transition: all 0.2s ease-in-out;
                 .btn-icon {
                     font-size: 15px;
                     position: relative;
                     transition: all 0.2s ease-in-out;
-                    color: $yellow;
+                    color: $black;
                 }
                 .btn-icon1 {
                     left: -20px;

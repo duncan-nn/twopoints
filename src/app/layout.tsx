@@ -62,8 +62,8 @@ const Poppins = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "TwoPoints Studio",
-  description: "",
+  title: "TwoPoints Studio | Creative & Marketing Agency",
+  description: "We help brands grow through strategy, design, virtual product photography, 3D visuals, and powerful digital marketing solutions.",
 };
 
 export default function RootLayout({
