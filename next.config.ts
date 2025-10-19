@@ -17,6 +17,18 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "twopointsstudio.com",
       },
+        {
+        protocol: "http",
+        hostname: "twopointsstudio.com",
+      },
+      {
+        protocol: "https",
+        hostname: "blog.twopointsstudio.com",
+      },
+      {
+        protocol: "http",
+        hostname: "blog.twopointsstudio.com",
+      },
     ],
   },
   sassOptions: {
