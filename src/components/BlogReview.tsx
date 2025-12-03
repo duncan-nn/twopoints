@@ -105,6 +105,7 @@ const BlogReview = ({posts, categories,}: {posts: Post[], categories: NoteCatego
                         className='container-inner'
                     >
                         {otherPostsWithFormattedDates.map((post) => {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
                             const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
                             // Get first category ID that is not 21
                             const firstCategoryId = post.categories.find(catId => catId !== 21);

@@ -67,9 +67,9 @@ function OurWorkSection() {
                         </div>
                         <div className="product-details">
                             <div className='subject-tag'>
-                                <span></span><h3 className='tag-text'>Oyelu</h3>
+                                <span></span><h3 className='tag-text'>Nile & Roots</h3>
                             </div>
-                            <h2 className='text'>Bold virtual photography that transforms Oyelu&apos;s products into radiant, statement-worthy visuals.</h2>
+                            <h2 className='text'>Bold virtual photography that transforms Nile & Roots&apos;s products into radiant, statement-worthy visuals.</h2>
                         </div>
                     </Link>
                     <Link href={'/'} className="product-card">

@@ -21,17 +21,22 @@ const NoteCategories = ({
             others.push(cat);
         }
     }
+
+    const totalCount = others.reduce((sum, cat) => sum + cat.count, 0);
   
   return (
     <div className='header'>
         <div className='page-title'>
         <span></span><h3 className='title-text'>Notes</h3>
         </div>
-        {   special.all &&
+        {/* {   special.all &&
             <Link href={`/notes?category=${special.all.slug}`} className='category-item'>
             <h1>explore all</h1><span className='count'>{special.all.count}</span>
             </Link>
-        }
+        } */}
+        <Link href={`/notes`} className='category-item'>
+            <h1>Explore all</h1><span className='count'>{totalCount}</span>
+        </Link>
         {others.map((category) => {
         return (
             <Link key={category.id} href={`/notes?category=${category.slug}`} className='category-item'>

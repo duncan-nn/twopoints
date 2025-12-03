@@ -30,7 +30,7 @@ export default async function Notes({ searchParams }: {searchParams: Promise<{
     const matchedCategory = categories.find((cat: NoteCategory) => cat.slug === category);
 
     // If no match, default to 24
-    const categoryId = matchedCategory ? matchedCategory.id : 24;
+    const categoryId = matchedCategory ? matchedCategory.id : 0;
 
     const post_data = await getPosts(search, categoryId, tag, parseInt(page,10), per_page,);
     const posts = post_data.posts;

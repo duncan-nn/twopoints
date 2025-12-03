@@ -42,6 +42,14 @@
             margin-right: 40px;
             margin-bottom: 20px;
             // border: 1px solid #fff;
+                &:hover {
+                h1 {
+                    color: #ffffff;
+                }
+                span {
+                    color: #ffffff;
+                }
+            }
             h1 {
                 font-family: var(--font-Poppins), sans-serif;
                 font-weight: 400;
@@ -51,6 +59,7 @@
                 margin-right: 5px;
                 padding: 0;
                 line-height: 1;
+                transition: color 0.3s ease;
                 @include u.breakpoint(md) {
                     font-size: 35px;
                 }  
@@ -63,7 +72,8 @@
                 margin: 0;
                 margin-bottom: 2px;
                 padding: 0;
-                line-height: 1;           
+                line-height: 1;
+                transition: color 0.3s ease;         
             }
         }
     }
@@ -164,15 +174,19 @@
         justify-content: space-between;
         margin-bottom: 30px;
         padding-right: 20px;
-        @include u.breakpoint(md)  {
-            margin-bottom: 0px;
-            padding-right: 0px;
-            width: 30%;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+        // @include u.breakpoint(md)  {
+        //     margin-bottom: 0px;
+        //     padding-right: 0px;
+        //     width: 30%;
+        //     flex-direction: column;
+        //     justify-content: space-between;
+        // }
         @include u.breakpoint(md) {
             width: 300px;
+            margin-bottom: 0px;
+            padding-right: 0px;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .left {
             width: calc(100% - 90px);
@@ -262,12 +276,13 @@
         width: 100%;
         overflow: hidden;
         // padding-left: 20px;
-        @include u.breakpoint(md) {
-            width: 70%;
-            padding-left: 50px;
-        }
+        // @include u.breakpoint(md) {
+        //     width: 70%;
+        //     padding-left: 50px;
+        // }
         @include u.breakpoint(md) {
             width: calc(100% - 300px);
+            padding-left: 50px;
         }
         .container-wrap {
             width: 150%;

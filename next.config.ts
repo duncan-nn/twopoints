@@ -23,11 +23,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "blog.twopointsstudio.com",
+        hostname: "olive-aardvark-768094.hostingersite.com",
       },
       {
         protocol: "http",
-        hostname: "blog.twopointsstudio.com",
+        hostname: "olive-aardvark-768094.hostingersite.com",
       },
     ],
   },

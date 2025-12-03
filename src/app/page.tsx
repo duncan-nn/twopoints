@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default async function Home() {
   const categories: NoteCategory[] = await getPostCategories();
   
-  const post_data = await getPosts("", 24, "", parseInt("1",10), 4,);
+  const post_data = await getPosts("", 0, "", parseInt("1",10), 4,);
   const posts = post_data.posts;
   return (
     <div className="home-page">

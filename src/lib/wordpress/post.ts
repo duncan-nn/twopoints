@@ -21,7 +21,7 @@ export const getPosts = async (
         const url = `${API_URL}/posts`;
         const oauthParams = generateOAuthSignature(url, "GET", {
             search: search,
-            categories: categoryId,
+            ...(categoryId !== 0 && { categories: categoryId }),
             tag: tag,
             page: page,
             per_page: per_page,
@@ -31,7 +31,7 @@ export const getPosts = async (
             params: {
             ...oauthParams,
             search: search,
-            categories: categoryId,
+            ...(categoryId !== 0 && { categories: categoryId }),
             tag: tag,
             page: page,
             per_page: per_page,
