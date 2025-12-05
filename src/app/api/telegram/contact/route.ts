@@ -9,7 +9,7 @@ export async function POST(req: Request) {
     const chat_id = process.env.TELEGRAM_CHAT_ID;
 
     const msg =
-      "New message from contact form (Elevate Retail): %0A%0A" +
+      "New message from contact form (TwoPoints Studio): %0A%0A" +
       `👤 Name: ${name}%0A` +
       `📧 Email: ${email}%0A` +
       `📱 Phone: ${phone || 'Not provided'}%0A` +
@@ -20,9 +20,42 @@ export async function POST(req: Request) {
 
     await axios.get(url);
 
-    return NextResponse.json({ success: true });
+    return new NextResponse(
+      JSON.stringify({ success: true }),
+      {
+        status: 200,
+        headers: {
+          "Access-Control-Allow-Origin": "https://twopointsstudio.com",
+          "Access-Control-Allow-Methods": "POST, OPTIONS",
+          "Access-Control-Allow-Headers": "Content-Type",
+        }
+      }
+    );
+
   } catch (error) {
     console.error('Telegram error:', error);
-    return NextResponse.json({ success: false }, { status: 500 });
+    return new NextResponse(
+      JSON.stringify({ success: false }),
+      {
+        status: 500,
+        headers: {
+          "Access-Control-Allow-Origin": "https://twopointsstudio.com",
+          "Access-Control-Allow-Methods": "POST, OPTIONS",
+          "Access-Control-Allow-Headers": "Content-Type",
+        }
+      }
+    );
   }
+}
+
+// Important: Handle OPTIONS for CORS preflight
+export function OPTIONS() {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+    }
+  });
 }

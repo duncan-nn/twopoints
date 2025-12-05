@@ -9,6 +9,7 @@ import TextMarquee from "@/components/TextMarquee";
 import BlogReview from "@/components/BlogReview";
 import { NoteCategory } from "@/lib/types";
 import Skeleton from "@/components/Skeleton";
+import WhatsAppChat from "@/components/WhatsAppChat";
 
 export const metadata: Metadata = {
   title: "TwoPoints Studio | Creative & Marketing Agency",
@@ -30,6 +31,7 @@ export default async function Home() {
       <Suspense fallback={<Skeleton/>}>
         <BlogReview posts={posts} categories={categories}/>
       </Suspense>
+      <WhatsAppChat />
     </div>
   );
 }

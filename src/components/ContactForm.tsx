@@ -71,6 +71,11 @@ export default function CheckoutForm() {
                 body: JSON.stringify(formData),
             });
 
+            // Meta Pixel Track
+            if (typeof window !== 'undefined' && window.fbq) {
+                window.fbq('track', 'Lead');       // or 'SubmitApplication', 'CompleteRegistration'
+            }
+
             toast.success("Your message is sent");
             reset(); 
         } else {
@@ -159,6 +164,9 @@ export default function CheckoutForm() {
                                                     <SelectItem 
                                                     className="select-item-cs text-white"
                                                     value="newsletter">Newsletter</SelectItem>
+                                                    <SelectItem 
+                                                    className="select-item-cs text-white"
+                                                    value="else where">Else where</SelectItem>
                                             </SelectGroup>
                                         </SelectContent>
                                     </Select>
@@ -173,7 +181,7 @@ export default function CheckoutForm() {
                             <Textarea
                             {...register("message")}
                             className="input-general textarea-cs border-zinc-700"
-                            placeholder="Type your message here." />
+                            placeholder="Tell us what you’d like us to work on for you…" />
                             {errors.message && (
                                 <p className="error-msg">{errors.message.message}</p>
                             )}

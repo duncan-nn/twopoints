@@ -9,7 +9,7 @@ import RelatedNotes from '@/components/RelatedNotes';
 import { NoteCategory } from '@/lib/types';
 
 export const metadata: Metadata = {
-  title: "Notes | Insights & Ideas from TwoPoints Studio",
+  title: "Note | Insights & Ideas from TwoPoints Studio",
   description: "Read creative insights, brand strategy tips, and digital design trends from the minds behind TwoPoints Studio.",
 };
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Metadata } from "next";
+import WhatsAppChat from '@/components/WhatsAppChat';
 
 export const metadata: Metadata = {
   title: "Our Services | TwoPoints Studio Creative Agency",
@@ -164,6 +165,7 @@ function Services() {
                     </div>
                 </div>
             </div>
+            <WhatsAppChat />
         </div>
     </div>
   )

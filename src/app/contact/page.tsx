@@ -2,10 +2,11 @@ import React from "react";
 import { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faFacebook, faTiktok } from "@fortawesome/free-brands-svg-icons";
+import WhatsAppChat from "@/components/WhatsAppChat";
 
 export const metadata: Metadata = {
-  title: "Contact TwoPoints Studio | Let’s Create Something Bold",
+  title: "Contact TwoPoints Studio | Let's Create Something Bold",
   description: "Get in touch with TwoPoints Studio for creative strategy, virtual photography, 3D animations, or web development services.",
 };
 
@@ -36,17 +37,17 @@ export default function ContactPage() {
                 </a>
                 <a
                 className="icon-link-wrap"
-                href="https://www.linkedin.com/company/elevate-retaiil/"
+                href="https://www.tiktok.com/@twopointsstudio"
                 target="_blank"
                 rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
+                  <FontAwesomeIcon icon={faTiktok} className="social-icon" />
                 </a>
                 <a
                 className="icon-link-wrap"
-                href="https://www.youtube.com/channel/UCYYrfW-yHvn3n2nNmb5MhNA"
+                href="https://facebook.com/twopointsstudio.ng/"
                 target="_blank"
                 rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faYoutube} className="social-icon" />
+                  <FontAwesomeIcon icon={faFacebook} className="social-icon" />
                 </a>
               </div>
             </div>
@@ -62,6 +63,7 @@ export default function ContactPage() {
             <ContactForm />
           </div>
         </div>
+        <WhatsAppChat />
       </div>
     </div>
   );
