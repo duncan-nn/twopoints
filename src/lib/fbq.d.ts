@@ -1,6 +1,10 @@
 declare global {
   interface Window {
-    fbq: any;
+    fbq: (
+      command: 'init' | 'track' | 'trackCustom',
+      eventNameOrId: string,
+      params?: Record<string, unknown>
+    ) => void;
   }
 }
 
