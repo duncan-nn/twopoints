@@ -24,6 +24,7 @@
         height: 100%;
         overflow: hidden;
         border-radius: 20px;
+        animation: fade-up 0.5s;
         @include u.breakpoint(md) {
             border-radius: 30px;
         }

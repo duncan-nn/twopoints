@@ -25,7 +25,7 @@ export async function POST(req: Request) {
       {
         status: 200,
         headers: {
-          "Access-Control-Allow-Origin": "https://twopointsstudio.com",
+          "Access-Control-Allow-Origin": "https://www.twopointsstudio.com",
           "Access-Control-Allow-Methods": "POST, OPTIONS",
           "Access-Control-Allow-Headers": "Content-Type",
         }
@@ -39,7 +39,7 @@ export async function POST(req: Request) {
       {
         status: 500,
         headers: {
-          "Access-Control-Allow-Origin": "https://twopointsstudio.com",
+          "Access-Control-Allow-Origin": "https://www.twopointsstudio.com",
           "Access-Control-Allow-Methods": "POST, OPTIONS",
           "Access-Control-Allow-Headers": "Content-Type",
         }

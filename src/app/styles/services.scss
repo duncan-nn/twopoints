@@ -7,6 +7,7 @@
     .service-page-inner {
         width: 100%;
         padding: 100px 20px 0px 20px;
+        animation: fade-up 0.5s;
          @include u.breakpoint(md) {
             padding: 100px 60px 0px 60px;
          }
