@@ -1,14 +1,10 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { Metadata } from "next";
-import { getPostCategories, getPosts } from '@/lib/wordpress/post';
 import HomeHeroSection from "@/components/HomeHeroSection";
 import WhoWeAreSection from "@/components/WhoWeAreSection";
 import OurWorkSection from "@/components/OurWorkSection";
 import OurExpertise from "@/components/OurExpertise";
 import TextMarquee from "@/components/TextMarquee";
-import BlogReview from "@/components/BlogReview";
-import { NoteCategory } from "@/lib/types";
-import Skeleton from "@/components/Skeleton";
 import WhatsAppChat from "@/components/WhatsAppChat";
 
 export const metadata: Metadata = {

@@ -26,7 +26,7 @@ function Services() {
                     <div className='left'></div>
                     <div className='right'>
                         <h2>
-                            Whether you're launching your first online store or scaling an established 
+                            Whether you&apos;re launching your first online store or scaling an established 
                             brand, we create solutions designed for performance, conversion, and long-term growth.
                         </h2>
                     </div>
